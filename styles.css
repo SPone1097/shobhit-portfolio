@@ -467,13 +467,18 @@
   @media(min-width:900px){ .tool-grid{grid-template-columns:repeat(6,1fr);} }
   .tool-cell{
     background:var(--ink);
-    padding:20px 14px;
-    display:flex; flex-direction:column; align-items:center; gap:10px;
+    padding:18px 14px;
+    display:flex; flex-direction:column; align-items:center; gap:8px;
     text-align:center;
   }
   .tool-cell img, .tool-cell svg{
-    width:26px; height:26px;
-    opacity:0.85;
+    display:block;
+    width:18px !important;
+    height:18px !important;
+    max-width:18px;
+    max-height:18px;
+    object-fit:contain;
+    opacity:0.75;
   }
   .tool-cell span{
     font-family:'IBM Plex Mono', monospace;
