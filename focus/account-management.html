@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Management — Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .detail-hero{padding:56px 0 48px; border-bottom:1px solid var(--line);}
+  .back-link{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--text-dim); text-decoration:none;
+    margin-bottom:28px;
+  }
+  .back-link:hover{color:var(--gold-soft);}
+  .back-link .arrow{transition:transform .2s ease;}
+  .back-link:hover .arrow{transform:translateX(-4px);}
+
+  .detail-title{font-size:clamp(30px,5vw,48px); line-height:1.05; max-width:22ch;}
+  .detail-sub{margin-top:16px; color:var(--text-dim); max-width:58ch; font-size:16px;}
+
+  .detail-facts{
+    margin-top:32px;
+    display:grid; gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    grid-template-columns:1fr;
+  }
+  @media(min-width:640px){ .detail-facts{grid-template-columns:repeat(4,1fr);} }
+  .fact{background:var(--ink); padding:16px 18px;}
+  .fact .k{font-family:'IBM Plex Mono', monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-dimmer);}
+  .fact .v{margin-top:6px; font-size:14px; color:var(--gold-soft);}
+
+  .detail-body{padding:56px 0;}
+  .highlight-list{display:grid; gap:16px; margin-top:8px; max-width:74ch;}
+  .highlight{
+    border:1px solid var(--line);
+    padding:20px 24px;
+    display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:start;
+  }
+  .highlight .hnum{font-family:'Fraunces',serif; font-size:24px; color:var(--gold-soft);}
+  .highlight p{margin:0; color:var(--text-dim); font-size:14.5px;}
+  .highlight p b{color:var(--paper);}
+
+  .back-foot{padding:0 0 72px;}
+  .back-foot a{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--text-dim); text-decoration:none;
+  }
+  .back-foot a:hover{color:var(--gold-soft);}
+</style>
+</head>
+<body>
+
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html"><span class="arrow">&larr;</span> Back to file</a>
+    <span class="eyebrow">Focus Area 02</span>
+    <h1 class="detail-title">Account Management</h1>
+    <p class="detail-sub">Keeping accounts healthy after the deal closes — onboarding, retention, and the follow-through that turns a signed contract into a lasting relationship.</p>
+
+    <div class="detail-facts">
+      <div class="fact"><div class="k">Retention lift</div><div class="v">+20%</div></div>
+      <div class="fact"><div class="k">Activation held</div><div class="v">88%+ vs 85% target</div></div>
+      <div class="fact"><div class="k">SLA compliance</div><div class="v">100%</div></div>
+      <div class="fact"><div class="k">Portfolio</div><div class="v">15–20 accounts</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <h2 style="font-size:20px; font-family:'Inter',sans-serif; font-weight:600; margin-bottom:18px;">Highlights</h2>
+    <div class="highlight-list">
+      <div class="highlight">
+        <span class="hnum">01</span>
+        <p>Managed onboarding, implementation, and account finances — pricing, billing, quotations — for Profitzon clients, maintaining <b>accurate CRM records</b> through the transition to steady state.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">02</span>
+        <p>Improved seller retention by <b>20%</b> at Amazon's Account Health Support team through in-depth investigations, proactive follow-up, and structured issue resolution.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">03</span>
+        <p>Sustained account activation above target — <b>88%+ against an 85% goal</b> — by leading pilot programs and resolving seller issues within SLA.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">04</span>
+        <p>Stabilized reactivated seller accounts post-reinstatement, ensuring smooth ongoing operations and <b>long-term account loyalty</b> rather than a one-time fix.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">05</span>
+        <p>Ran Quarterly Business Reviews and contributed to Executive Business Reviews with Profitzon clients, keeping account health visible at every level.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">06</span>
+        <p>Maintained <b>100% SLA compliance</b> across the investigation portfolio through structured, timely resolution, while coordinating with prep centers to support account needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html">&larr; Back to full case file</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>

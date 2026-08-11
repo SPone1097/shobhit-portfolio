@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Development — Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .detail-hero{padding:56px 0 48px; border-bottom:1px solid var(--line);}
+  .back-link{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--text-dim); text-decoration:none;
+    margin-bottom:28px;
+  }
+  .back-link:hover{color:var(--gold-soft);}
+  .back-link .arrow{transition:transform .2s ease;}
+  .back-link:hover .arrow{transform:translateX(-4px);}
+
+  .detail-title{font-size:clamp(30px,5vw,48px); line-height:1.05; max-width:22ch;}
+  .detail-sub{margin-top:16px; color:var(--text-dim); max-width:58ch; font-size:16px;}
+
+  .detail-body{padding:56px 0;}
+  .highlight-list{display:grid; gap:16px; margin-top:8px;}
+  .highlight{
+    border:1px solid var(--line);
+    padding:20px 24px;
+    display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:start;
+  }
+  .highlight .hnum{
+    font-family:'Fraunces',serif; font-size:24px; color:var(--gold-soft);
+  }
+  .highlight p{margin:0; color:var(--text-dim); font-size:14.5px;}
+  .highlight p b{color:var(--paper);}
+
+  .detail-grid2{display:grid; gap:40px; grid-template-columns:1fr;}
+  @media(min-width:900px){ .detail-grid2{grid-template-columns:1.1fr 0.9fr;} }
+
+  .exhibit-label{
+    display:flex; justify-content:space-between; align-items:baseline;
+    margin-bottom:14px;
+    font-family:'IBM Plex Mono', monospace;
+  }
+  .exhibit-label .a{font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-dimmer);}
+  .exhibit-label .b{font-size:11px; color:var(--sage);}
+  .exhibit-figures{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:6px;}
+  .exhibit-figures .from{font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--text-dimmer);}
+  .exhibit-figures .to{font-family:'Fraunces',serif; font-size:34px; color:var(--gold-soft);}
+  .exhibit svg{width:100%; height:auto; display:block; margin-top:6px;}
+  .exhibit-caption{margin-top:10px; font-size:13px; color:var(--text-dim); border-top:1px solid var(--line); padding-top:12px;}
+  #growth-path{stroke-dasharray:600; stroke-dashoffset:600; transition:stroke-dashoffset 1.8s cubic-bezier(.16,.84,.44,1);}
+  .exhibit.in-view #growth-path{stroke-dashoffset:0;}
+  #growth-dot{opacity:0; transition:opacity .4s ease 1.5s;}
+  .exhibit.in-view #growth-dot{opacity:1;}
+
+  .back-foot{padding:0 0 72px;}
+  .back-foot a{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--text-dim); text-decoration:none;
+  }
+  .back-foot a:hover{color:var(--gold-soft);}
+</style>
+</head>
+<body>
+
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html"><span class="arrow">&larr;</span> Back to file</a>
+    <span class="eyebrow">Focus Area 01</span>
+    <h1 class="detail-title">Business Development</h1>
+    <p class="detail-sub">Finding revenue that wasn't there yet — sourcing leads, running the pitch, and closing the deal without a playbook to follow.</p>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap detail-grid2">
+    <div class="reveal">
+      <h2 style="font-size:20px; font-family:'Inter',sans-serif; font-weight:600; margin-bottom:18px;">Highlights</h2>
+      <div class="highlight-list">
+        <div class="highlight">
+          <span class="hnum">01</span>
+          <p>Found a lead on Amazon seller forums by answering small account questions directly, then <b>closed the bigger opportunity</b> over a single objection-handling call — turning a $300 opening engagement into <b>$20,000+</b> in business at Profitzon.</p>
+        </div>
+        <div class="highlight">
+          <span class="hnum">02</span>
+          <p>Owned the <b>full commercial cycle solo</b> — presentation through negotiation to close — across 15–20 key EMEA accounts, covering both new business and expansion.</p>
+        </div>
+        <div class="highlight">
+          <span class="hnum">03</span>
+          <p>Built the Reinstatement service line at Profitzon <b>from zero</b>: no template, no existing process — just a four-person team and a working commercial model by the end of it.</p>
+        </div>
+        <div class="highlight">
+          <span class="hnum">04</span>
+          <p>Delivered consulting-style pitch decks in PowerPoint, advising sellers on <b>pricing and account strategy</b> as part of the sales conversation, not after it.</p>
+        </div>
+        <div class="highlight">
+          <span class="hnum">05</span>
+          <p>Sourced and vetted vendor relationships directly (including Proglo and KeHE) to secure inventory for client accounts, extending BD work upstream into supply.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="exhibit reveal" id="exhibit">
+      <div class="exhibit-label">
+        <span class="a">Exhibit A — Account Growth</span>
+        <span class="b">Profitzon LTD</span>
+      </div>
+      <div class="exhibit-figures">
+        <span class="from">Opened at $300</span>
+        <span class="to">$20,000+</span>
+      </div>
+      <svg viewBox="0 0 400 130" preserveAspectRatio="none">
+        <line x1="0" y1="110" x2="400" y2="110" stroke="rgba(243,239,228,0.12)" stroke-width="1"/>
+        <path id="growth-path" d="M10,102 C 90,98 140,95 180,80 C 220,64 240,40 280,26 C 320,12 360,8 390,6"
+              fill="none" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round"/>
+        <circle id="growth-dot" cx="390" cy="6" r="5" fill="#E4C97A"/>
+      </svg>
+      <p class="exhibit-caption">One account, from a $300 opening engagement to one of the firm's largest — driven by early adoption and consistent value realization, not a discount.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html">&larr; Back to full case file</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>io.observe(el));
+
+  const exhibit = document.getElementById('exhibit');
+  const eio = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ exhibit.classList.add('in-view'); eio.unobserve(exhibit); } });
+  }, {threshold:0.3});
+  eio.observe(exhibit);
+</script>
+
+</body>
+</html>
