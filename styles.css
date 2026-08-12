@@ -683,8 +683,9 @@
   .interest-grid{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
-    gap:10px;
-    margin-top:16px;
+    gap:14px;
+    margin-top:18px;
+    max-width:640px;
   }
   .interest-shot{
     position:relative;
@@ -707,3 +708,11 @@
     color:var(--paper);
   }
   @media(max-width:480px){ .interest-grid{gap:6px;} .interest-shot .cap{font-size:8.5px; padding:6px 6px 5px;} }
+
+  .off-clock{
+    margin-top:44px;
+    padding-top:32px;
+    border-top:1px solid var(--line);
+  }
+  .off-clock .h{font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-dimmer); margin-bottom:12px;}
+  @media(max-width:640px){ .interest-grid{grid-template-columns:1fr 1fr 1fr; max-width:100%;} }
