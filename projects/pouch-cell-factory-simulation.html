@@ -8,84 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
-<style>
-  .detail-hero{padding:56px 0 48px; border-bottom:1px solid var(--line);}
-  .back-link{
-    display:inline-flex; align-items:center; gap:8px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
-    color:var(--text-dim); text-decoration:none;
-    margin-bottom:28px;
-  }
-  .back-link:hover{color:var(--gold-soft);}
-  .back-link .arrow{transition:transform .2s ease;}
-  .back-link:hover .arrow{transform:translateX(-4px);}
-
-  .detail-title{font-size:clamp(30px,5vw,48px); line-height:1.05; max-width:24ch;}
-  .detail-sub{margin-top:16px; color:var(--text-dim); max-width:56ch; font-size:16px;}
-
-  .detail-facts{
-    margin-top:32px;
-    display:grid; gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
-    grid-template-columns:1fr;
-  }
-  @media(min-width:640px){ .detail-facts{grid-template-columns:repeat(4,1fr);} }
-  .fact{background:var(--ink); padding:16px 18px;}
-  .fact .k{font-family:'IBM Plex Mono', monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-dimmer);}
-  .fact .v{margin-top:6px; font-size:14px; color:var(--gold-soft);}
-
-  .detail-body{padding:56px 0;}
-  .detail-grid{display:grid; gap:40px; grid-template-columns:1fr;}
-  @media(min-width:900px){ .detail-grid{grid-template-columns:1.1fr 0.9fr;} }
-
-  .detail-copy h2{font-size:20px; font-family:'Inter',sans-serif; font-weight:600; margin-bottom:14px;}
-  .detail-copy p{color:var(--text-dim); font-size:14.5px; margin:0 0 16px;}
-  .detail-copy ul{margin:0 0 16px; padding-left:20px; color:var(--text-dim); font-size:14.5px;}
-  .detail-copy li{margin-bottom:8px;}
-  .detail-copy li b{color:var(--paper);}
-
-  .viewer-card{border:1px solid var(--line-strong); background:rgba(243,239,228,0.02);}
-  .viewer-head{
-    display:flex; justify-content:space-between; align-items:center;
-    padding:16px 18px; border-bottom:1px solid var(--line);
-  }
-  .viewer-head .name{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--text-dim);}
-  .viewer-head .dl{
-    font-family:'IBM Plex Mono', monospace; font-size:11.5px;
-    color:var(--gold); text-decoration:none;
-    border:1px solid var(--line-strong); padding:6px 12px;
-  }
-  .viewer-head .dl:hover{border-color:var(--gold); background:rgba(201,162,39,0.06);}
-  .viewer-frame{width:100%; height:0; padding-bottom:129%; position:relative; background:#1a2c3a;}
-  .viewer-frame embed, .viewer-frame iframe{
-    position:absolute; inset:0; width:100%; height:100%; border:0;
-  }
-  .viewer-fallback{
-    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-    flex-direction:column; gap:12px; padding:24px; text-align:center;
-  }
-  .viewer-fallback p{color:var(--text-dim); font-size:13px; margin:0;}
-  .viewer-fallback a{
-    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--gold-soft);
-    border:1px solid var(--line-strong); padding:8px 16px; text-decoration:none;
-  }
-
-  .back-foot{padding:0 0 72px;}
-  .back-foot a{
-    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
-    color:var(--text-dim); text-decoration:none;
-  }
-  .back-foot a:hover{color:var(--gold-soft);}
-</style>
 </head>
 <body>
-
 <header class="detail-hero">
   <div class="wrap">
     <a class="back-link reveal" href="../index.html"><span class="arrow">&larr;</span> Back to file</a>
-    <span class="eyebrow">03 / Projects — HTW Berlin</span>
+    <span class="eyebrow">04 / Projects — HTW Berlin</span>
     <h1 class="detail-title">Pouch Cell Factory Simulation</h1>
     <p class="detail-sub">A ground-up factory layout for lithium pouch cell production, built as project lead for a five-person MBA team using Siemens Technomatix.</p>
 
@@ -99,7 +27,7 @@
 </header>
 
 <section class="detail-body">
-  <div class="wrap detail-grid">
+  <div class="wrap">
     <div class="detail-copy reveal">
       <h2>What this was</h2>
       <p>An MBA coursework project simulating the setup of a pouch cell battery factory from a blank floor plan. The brief called for a working layout, a realistic project plan, and a report documenting both the technical and management sides of the build.</p>
@@ -108,25 +36,11 @@
         <li>Built the full <b>factory layout in Siemens Technomatix</b>, sequencing production stages from raw material intake to finished cell output.</li>
         <li>Led a <b>5-person cross-functional team</b>, splitting workstreams across layout design, capacity planning, and reporting.</li>
         <li>Tracked progress with a <b>Work Breakdown Structure and Gantt chart</b>, keeping the team aligned against a fixed academic deadline.</li>
-        <li>Produced <b>weekly operational and management reports in Overleaf</b>, culminating in the full report previewed alongside this page.</li>
+        <li>Produced <b>weekly operational and management reports in Overleaf</b>, culminating in a 24-page final report.</li>
       </ul>
 
       <h2>Why it's here</h2>
       <p>It's the clearest evidence of end-to-end ownership on file: scoping a build with no existing template, coordinating a team against a deadline, and documenting the outcome to a professional standard. The same instincts show up later in building the Reinstatement team at Profitzon from scratch.</p>
-    </div>
-
-    <div class="viewer-card reveal">
-      <div class="viewer-head">
-        <span class="name">CellTech — Project Management Report.pdf</span>
-        <a class="dl" href="assets/celltech-report.pdf" download>Download</a>
-      </div>
-      <div class="viewer-frame">
-        <embed src="assets/celltech-report.pdf" type="application/pdf" />
-        <div class="viewer-fallback" style="display:none;">
-          <p>Your browser can't preview PDFs inline.</p>
-          <a href="assets/celltech-report.pdf" target="_blank" rel="noopener">Open report in new tab &rarr;</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -143,17 +57,6 @@
     });
   }, {threshold:0.1});
   revealEls.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
-
-  // Detect lack of PDF embed support (e.g. some mobile browsers) and show fallback
-  (function(){
-    const embed = document.querySelector('.viewer-frame embed');
-    const fallback = document.querySelector('.viewer-fallback');
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if(isMobile){
-      embed.style.display = 'none';
-      fallback.style.display = 'flex';
-    }
-  })();
 </script>
 
 </body>

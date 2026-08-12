@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategic Marketing — MAHLE — Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html"><span class="arrow">&larr;</span> Back to file</a>
+    <span class="eyebrow">04 / Projects — HTW Berlin</span>
+    <h1 class="detail-title">Strategic Marketing — MAHLE</h1>
+    <p class="detail-sub">A solo case study on automotive supplier MAHLE — history, financials, global footprint, competitive position, and its path to zero-carbon powertrains.</p>
+
+    <div class="detail-facts">
+      <div class="fact"><div class="k">Format</div><div class="v">Solo project</div></div>
+      <div class="fact"><div class="k">Course</div><div class="v">Strategic Marketing</div></div>
+      <div class="fact"><div class="k">Revenue covered</div><div class="v">€10.9B (2021)</div></div>
+      <div class="fact"><div class="k">Scope</div><div class="v">60+ countries</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <div class="detail-copy reveal">
+      <h2>What this was</h2>
+        <p>A full case study on MAHLE, a leading automotive components supplier, built solo end to end — from company history through to strategic recommendations on where the business is headed.</p>
+<li>Traced MAHLE's <b>history</b> from its 1920 founding through its 2019 chargeBIG start-up launch.</li>
+<li>Broke down the <b>business overview and financials</b> — €10.9B in 2021 sales across five business units, plus R&D spend and regional sales mix.</li>
+<li>Mapped its <b>global footprint</b> across roughly 60 countries and its competitive position against Schaeffler, Valeo, Hitachi, and Kongsberg Automotive.</li>
+<li>Closed with MAHLE's <b>roadmap to zero-carbon</b> powertrains — electricity, hydrogen, non-fossil fuels, and gas as the four transition paths.</li>
+
+      <h2>Why it's here</h2>
+        <p>It's the clearest solo evidence of building a complete company analysis from public sources — pulling financials, competitive data, and strategic direction into one coherent narrative without a team to divide the work.</p>
+    </div>
+
+    <div class="gallery-head reveal">
+      <h2>Deck</h2>
+      <span class="gallery-note">All 11 slides</span>
+    </div>
+    <div class="slide-gallery">
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-1.jpg" alt="Strategic Marketing — MAHLE — slide 1" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-2.jpg" alt="Strategic Marketing — MAHLE — slide 2" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-3.jpg" alt="Strategic Marketing — MAHLE — slide 3" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-4.jpg" alt="Strategic Marketing — MAHLE — slide 4" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-5.jpg" alt="Strategic Marketing — MAHLE — slide 5" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-6.jpg" alt="Strategic Marketing — MAHLE — slide 6" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-7.jpg" alt="Strategic Marketing — MAHLE — slide 7" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-8.jpg" alt="Strategic Marketing — MAHLE — slide 8" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-9.jpg" alt="Strategic Marketing — MAHLE — slide 9" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-10.jpg" alt="Strategic Marketing — MAHLE — slide 10" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/mahle/slide-11.jpg" alt="Strategic Marketing — MAHLE — slide 11" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html">&larr; Back to full case file</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+</script>
+
+</body>
+</html>

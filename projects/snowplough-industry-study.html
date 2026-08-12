@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snowplough Industry Study — Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html"><span class="arrow">&larr;</span> Back to file</a>
+    <span class="eyebrow">04 / Projects — HTW Berlin</span>
+    <h1 class="detail-title">Snowplough Industry Study</h1>
+    <p class="detail-sub">A market research deep-dive into the global snowplough industry, from its 19th-century origins to today's autonomous equipment.</p>
+
+    <div class="detail-facts">
+      <div class="fact"><div class="k">Format</div><div class="v">Team project</div></div>
+      <div class="fact"><div class="k">Scope</div><div class="v">Global market</div></div>
+      <div class="fact"><div class="k">Market size</div><div class="v">$2.8B, 3% CAGR</div></div>
+      <div class="fact"><div class="k">Output</div><div class="v">15-slide report</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <div class="detail-copy reveal">
+      <h2>What this was</h2>
+        <p>A market research project tracing an unglamorous but genuinely global industry — snow removal — from horse-drawn carts and hand shovels through to autonomous airport snowploughs.</p>
+<li>Traced the industry's <b>history</b>, from 1862 horse-drawn snow rollers to the first car-mounted plough in 1923.</li>
+<li>Mapped <b>market segmentation and key suppliers</b> (Meyer Products, Western Products, SnowDogg, Fisher Engineering) across residential, commercial, and public-sector customers.</li>
+<li>Sized the market (public snow removal in the US alone ran $3-4B in 2016) and flagged the operational <b>risks and supply-chain pressures</b> facing contractors.</li>
+<li>Covered emerging <b>autonomous technology</b> — Yeti Move's airport snowploughs and Snowbot, the first residential autonomous snowblower — plus substitutes like heated roads.</li>
+
+      <h2>Why it's here</h2>
+        <p>It shows the same research instinct applied somewhere with zero prior familiarity: build a full picture of an unfamiliar industry from public sources, then turn it into findings someone could actually act on.</p>
+    </div>
+
+    <div class="gallery-head reveal">
+      <h2>Deck</h2>
+      <span class="gallery-note">14 of 15 slides — title slide with team roster omitted</span>
+    </div>
+    <div class="slide-gallery">
+      <div class="slide-shot reveal"><img src="assets/snow/slide-1.jpg" alt="Snowplough Industry Study — slide 1" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-2.jpg" alt="Snowplough Industry Study — slide 2" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-3.jpg" alt="Snowplough Industry Study — slide 3" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-4.jpg" alt="Snowplough Industry Study — slide 4" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-5.jpg" alt="Snowplough Industry Study — slide 5" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-6.jpg" alt="Snowplough Industry Study — slide 6" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-7.jpg" alt="Snowplough Industry Study — slide 7" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-8.jpg" alt="Snowplough Industry Study — slide 8" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-9.jpg" alt="Snowplough Industry Study — slide 9" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-10.jpg" alt="Snowplough Industry Study — slide 10" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-11.jpg" alt="Snowplough Industry Study — slide 11" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-12.jpg" alt="Snowplough Industry Study — slide 12" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-13.jpg" alt="Snowplough Industry Study — slide 13" loading="lazy"></div>
+      <div class="slide-shot reveal"><img src="assets/snow/slide-14.jpg" alt="Snowplough Industry Study — slide 14" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html">&larr; Back to full case file</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+</script>
+
+</body>
+</html>

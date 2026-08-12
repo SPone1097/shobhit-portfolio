@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bachelor of Engineering — Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html"><span class="arrow">&larr;</span> Back to file</a>
+    <span class="eyebrow">05 / Credentials — S.B. Jain Institute</span>
+    <h1 class="detail-title">Bachelor of Engineering</h1>
+    <p class="detail-sub">Degree certificate from Rashtrasant Tukadoji Maharaj Nagpur University, confirming the Bachelor of Engineering in Mechanical Engineering.</p>
+
+    <div class="detail-facts">
+      <div class="fact"><div class="k">Institution</div><div class="v">RTM Nagpur University</div></div>
+      <div class="fact"><div class="k">Degree</div><div class="v">B.Eng., Mechanical</div></div>
+      <div class="fact"><div class="k">CGPA</div><div class="v">7.56</div></div>
+      <div class="fact"><div class="k">Awarded</div><div class="v">Jan 2020</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <div class="detail-copy reveal">
+        <p>Degree certificate confirming the Bachelor of Engineering in Mechanical Engineering, awarded by Rashtrasant Tukadoji Maharaj Nagpur University for the examination passed in Summer 2019, with a final CGPA of 7.56.</p>
+    </div>
+    <div class="cert-frame reveal">
+      <img src="assets/bachelor-degree.jpg" alt="Bachelor of Engineering">
+    </div>
+    <p class="cert-note">A family member's name printed on the original has been redacted from the public copy shown here.</p>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html">&larr; Back to full case file</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+</script>
+
+</body>
+</html>
