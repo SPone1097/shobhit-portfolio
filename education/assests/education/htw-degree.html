@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Degree Completion Confirmation — Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html"><span class="arrow">&larr;</span> Back to file</a>
+    <span class="eyebrow">05 / Credentials — HTW Berlin</span>
+    <h1 class="detail-title">Degree Completion Confirmation</h1>
+    <p class="detail-sub">Official confirmation from HTW Berlin's Studierendenservice that the Master's degree was completed and awarded.</p>
+
+    <div class="detail-facts">
+      <div class="fact"><div class="k">Institution</div><div class="v">HTW Berlin</div></div>
+      <div class="fact"><div class="k">Degree</div><div class="v">MBA & Engineering</div></div>
+      <div class="fact"><div class="k">Grade</div><div class="v">"gut" (2.00)</div></div>
+      <div class="fact"><div class="k">Completed</div><div class="v">17.05.2025</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <div class="detail-copy reveal">
+        <p>Official confirmation issued by HTW Berlin's Studierendenservice on 23.06.2025, verifying that the Master's program in Business Administration and Engineering was completed on 17.05.2025 with an overall grade of "gut" (2.00).</p>
+    </div>
+    <div class="cert-frame reveal">
+      <img src="assets/htw-degree.jpg" alt="Degree Completion Confirmation">
+    </div>
+    <p class="cert-note">Personal details (home address, matriculation number, date and place of birth) have been redacted from the public copy shown here.</p>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html">&larr; Back to full case file</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+</script>
+
+</body>
+</html>
