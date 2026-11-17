@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inbound Sales Certified · Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html#credentials"><span class="arrow">&larr;</span> Back to credentials</a>
+    <span class="eyebrow">05 / Credentials · HubSpot Academy</span>
+    <h1 class="detail-title">Inbound Sales Certified</h1>
+    <p class="detail-sub">HubSpot Academy certification in the inbound sales methodology: identify, connect, explore and advise prospective buyers.</p>
+
+    <div class="detail-facts">
+      <div class="fact"><div class="k">Issuer</div><div class="v">HubSpot Academy</div></div>
+      <div class="fact"><div class="k">Type</div><div class="v">Certification</div></div>
+      <div class="fact"><div class="k">Valid from</div><div class="v">Nov 9, 2026</div></div>
+      <div class="fact"><div class="k">Valid until</div><div class="v">Dec 8, 2028</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <div class="cert-frame cert-wide reveal">
+      <img src="assets/hubspot-inbound-sales.jpg" alt="Inbound Sales Certified certificate">
+    </div>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html#credentials">&larr; Back to credentials</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+</script>
+
+</body>
+</html>

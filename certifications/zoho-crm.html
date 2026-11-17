@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Zoho CRM · Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html#credentials"><span class="arrow">&larr;</span> Back to credentials</a>
+    <span class="eyebrow">05 / Credentials · LinkedIn Learning</span>
+    <h1 class="detail-title">Learning Zoho CRM</h1>
+    <p class="detail-sub">LinkedIn Learning course completion for Learning Zoho CRM, topic covered: Zoho CRM.</p>
+
+    <div class="detail-facts">
+      <div class="fact"><div class="k">Issuer</div><div class="v">LinkedIn Learning</div></div>
+      <div class="fact"><div class="k">Type</div><div class="v">Certificate of completion</div></div>
+      <div class="fact"><div class="k">Completed</div><div class="v">Jun 14, 2024</div></div>
+      <div class="fact"><div class="k">Duration</div><div class="v">1 h 5 min</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <div class="cert-frame cert-wide reveal">
+      <img src="assets/zoho-crm.jpg" alt="Learning Zoho CRM certificate">
+    </div>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html#credentials">&larr; Back to credentials</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+</script>
+
+</body>
+</html>
