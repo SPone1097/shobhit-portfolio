@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recruiting · Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .detail-hero{padding:40px 0 36px; border-bottom:1px solid var(--line);}
+  .back-link{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--text-dim); text-decoration:none;
+    margin-bottom:28px;
+  }
+  .back-link:hover{color:var(--gold-soft);}
+  .back-link .arrow{transition:transform .2s ease;}
+  .back-link:hover .arrow{transform:translateX(-4px);}
+
+  .detail-title{font-size:clamp(30px,5vw,48px); line-height:1.05; max-width:22ch;}
+  .detail-sub{margin-top:16px; color:var(--text-dim); max-width:58ch; font-size:16px;}
+
+  .detail-body{padding:40px 0;}
+  .highlight-list{display:grid; gap:16px; margin-top:8px;}
+  .highlight{
+    border:1px solid var(--line);
+    padding:20px 24px;
+    display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:start;
+  }
+  .highlight .hnum{font-family:'Fraunces',serif; font-size:24px; color:var(--gold-soft);}
+  .highlight p{margin:0; color:var(--text-dim); font-size:14.5px;}
+  .highlight p b{color:var(--paper);}
+
+  .crm-tags{display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 0;}
+  .crm-tags span{
+    border:1px solid var(--line-strong);
+    padding:7px 14px;
+    font-size:12.5px;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--gold-soft);
+  }
+
+  .back-foot{padding:0 0 72px;}
+  .back-foot a{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--text-dim); text-decoration:none;
+  }
+  .back-foot a:hover{color:var(--gold-soft);}
+</style>
+</head>
+<body>
+
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html"><span class="arrow">&larr;</span> Back to file</a>
+    <span class="eyebrow">Focus Area 05</span>
+    <h1 class="detail-title">Recruiting</h1>
+    <p class="detail-sub">Finding, assessing and onboarding people, from outbound sourcing to a screening pipeline that keeps a recruiter in charge of the decision. Targeting Recruiter and Talent Sourcer roles in Berlin and across the EU.</p>
+
+    <div class="crm-tags">
+      <span>Full-Cycle Recruiting</span>
+      <span>Boolean Sourcing</span>
+      <span>Outbound Outreach</span>
+      <span>Interviewing &amp; Negotiation</span>
+      <span>Onboarding</span>
+      <span>Screening Automation</span>
+      <span>ATS (Google Sheets)</span>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <h2 style="font-size:20px; font-family:'Inter',sans-serif; font-weight:600; margin:8px 0 18px; max-width:none;">Highlights</h2>
+    <div class="highlight-list">
+      <div class="highlight">
+        <span class="hnum">01</span>
+        <p>Sourced and hired a <b>four-person remote team</b> from scratch, outbound only with no job postings. Candidates were found with <b>Boolean search on LinkedIn</b>, and a second hiring batch came through referrals.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">02</span>
+        <p>Ran the <b>full hiring cycle</b>: outreach, first call, interview and negotiation, with offers issued through a colleague.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">03</span>
+        <p>Chose hiring markets by <b>talent-to-cost ratio</b> using AI-assisted search and market research, and hired from the Philippines on two full-time and two freelance contracts.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">04</span>
+        <p>Checked every hire against <b>budget and team fit</b>, including demographics and time zones. Two of the four stayed on after I left the team.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">05</span>
+        <p>Onboarded <b>every hire personally</b>, from the first-week plan to the point they worked independently.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">06</span>
+        <p>As an SME at Amazon Pune, sat on the <b>recruitment team</b>: advised interviewing managers on which questions to ask and what to look for, and owned new-hire onboarding, including the first-month plan and the criteria for handling calls, chats and emails independently. Trained 15 new hires, 14 of whom passed (93%).</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">07</span>
+        <p>Built an <b>n8n candidate screening pipeline</b> with Claude: Gemini scores CVs 1 to 5 against a job rubric, a Google Sheet works as the ATS, strong candidates get an interview invite, and every rejection is held 48 hours for a recruiter to review. <a href="../projects/n8n-candidate-screening-pipeline.html" style="color:var(--gold-soft);">See the build</a>.</p>
+      </div>
+      <div class="highlight">
+        <span class="hnum">08</span>
+        <p>Designed the pipeline around <b>human review of rejections</b> (GDPR Art. 22 and the EU AI Act): the AI reads and sorts, a recruiter decides. Tested it on tricky CVs, including one with hidden prompt text and one unreadable scan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html">&larr; Back to full case file</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>

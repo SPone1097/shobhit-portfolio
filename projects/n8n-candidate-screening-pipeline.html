@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Candidate Screening Pipeline · Shobhit Pise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link reveal" href="../index.html#projects"><span class="arrow">&larr;</span> Back to file</a>
+    <span class="eyebrow">04 / Projects · Personal · Automation</span>
+    <h1 class="detail-title">AI Candidate Screening Pipeline</h1>
+    <p class="detail-sub">Screening CVs by hand is slow and easy to get wrong when you are tired. I built this n8n pipeline to see how much of the work can be automated without taking the decision away from a person.</p>
+
+    <div class="detail-facts">
+      <div class="fact"><div class="k">Built with</div><div class="v">n8n, Google Gemini, Sheets, Drive, Gmail</div></div>
+      <div class="fact"><div class="k">Made with</div><div class="v">Claude</div></div>
+      <div class="fact"><div class="k">Structure</div><div class="v">3 workflows</div></div>
+      <div class="fact"><div class="k">Principle</div><div class="v">A person decides every rejection</div></div>
+    </div>
+    <div class="thesis-jump">
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7531728598878097408/" target="_blank" rel="noopener">Watch the demo video on LinkedIn <span class="arrow">&nearr;</span></a>
+      <a href="#screenshots">Screenshots <span class="arrow">&darr;</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="detail-body">
+  <div class="wrap">
+    <div class="detail-copy reveal">
+      <h2>How an application moves through it</h2>
+    </div>
+    <ol class="flow reveal">
+      <li><b>Apply</b><span>The candidate fills in a form and uploads a CV.</span></li>
+      <li><b>Read and store</b><span>The workflow reads the CV, saves it to Google Drive and sends it to Gemini with the job description and a scoring rubric.</span></li>
+      <li><b>Score</b><span>Gemini returns a score from 1 to 5, which must-haves are met and which are missing, and a short summary.</span></li>
+      <li><b>Track</b><span>Everything lands in a Google Sheet that works as a simple ATS.</span></li>
+      <li><b>Route</b><span>Strong candidates get an interview invite with a booking link at once. Borderline ones go to a recruiter. Low scores are not rejected straight away.</span></li>
+    </ol>
+
+    <div class="detail-copy reveal">
+      <h2>Keeping a person in charge</h2>
+      <p>Every rejection waits 48 hours so a recruiter can check it. A second workflow runs every 6 hours and sends only the rejections that are due, skipping anyone a recruiter has put on hold. In the EU a person should make the final call on a rejection (GDPR Art. 22, EU AI Act), so the AI handles the reading and sorting and a recruiter makes the decision.</p>
+      <p>This paid off during testing. The AI misread one candidate's dates and scored him too low. One click put his rejection on hold, and I fixed the prompt.</p>
+
+      <h2>What I tested</h2>
+      <li>A CV with <b>hidden text</b> telling the AI to give it a 5. It was flagged.</li>
+      <li>An <b>unreadable scan</b>. It went to a person instead of getting a guessed score.</li>
+
+      <h2>Reporting and alerts</h2>
+      <p>Every Monday a third workflow emails a report on where applicants come from, how they move through the funnel and who is waiting on a decision. If any step fails, an alert is sent.</p>
+
+      <h2>Why it's here</h2>
+      <p>It shows how I think about recruiting automation: let the tools do the reading and sorting, keep the judgment with a recruiter, and test the awkward cases before trusting it. A demo video of a live application going through the whole pipeline is on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7531728598878097408/" target="_blank" rel="noopener" style="color:var(--gold-soft);">LinkedIn</a>.</p>
+    </div>
+
+    <div class="gallery-head reveal" id="screenshots">
+      <h2>Screenshots</h2>
+      <span class="gallery-note">Sample company and candidates, all fictional</span>
+    </div>
+    <div class="shots">
+      <figure class="shot reveal shot-full"><img src="assets/n8n/workflow-1-screening-canvas.jpg" alt="Workflow 01, Candidate Screening: form, CV text extraction, Drive upload, Gemini scoring, a row in the pipeline sheet, then routing by score to an interview invite, a recruiter review alert or a queued rejection." loading="lazy"><figcaption>Workflow 01, Candidate Screening: form, CV text extraction, Drive upload, Gemini scoring, a row in the pipeline sheet, then routing by score to an interview invite, a recruiter review alert or a queued rejection.</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/n8n/sheet-scores-and-flags.jpg" alt="The Google Sheet ATS. Scores, red flags and notes sit next to each candidate. A CV with hidden instructions aimed at the screening system was flagged, and a scan the workflow could not read went to Review with a note." loading="lazy"><figcaption>The Google Sheet ATS. Scores, red flags and notes sit next to each candidate. A CV with hidden instructions aimed at the screening system was flagged, and a scan the workflow could not read went to Review with a note.</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/n8n/email-interview-invite.jpg" alt="The interview invite a strong candidate receives straight away, with a link to book a 30-minute video call." loading="lazy"><figcaption>The interview invite a strong candidate receives straight away, with a link to book a 30-minute video call.</figcaption></figure>
+      <figure class="shot reveal shot-full"><img src="assets/n8n/workflow-2-rejections-canvas.jpg" alt="Workflow 02, Send Due Rejections: every 6 hours it reads the sheet, finds rejections whose review window has passed and that are not on hold, sends the email and marks the row Rejected." loading="lazy"><figcaption>Workflow 02, Send Due Rejections: every 6 hours it reads the sheet, finds rejections whose review window has passed and that are not on hold, sends the email and marks the row Rejected.</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/n8n/sheet-hold-and-rejections.jpg" alt="Rejection due dates and the hold flag. One candidate is on hold, so nothing is sent for him, while another rejection is queued until its window ends." loading="lazy"><figcaption>Rejection due dates and the hold flag. One candidate is on hold, so nothing is sent for him, while another rejection is queued until its window ends.</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/n8n/email-rejection.jpg" alt="The rejection email, sent only after the 48-hour review window." loading="lazy"><figcaption>The rejection email, sent only after the 48-hour review window.</figcaption></figure>
+      <figure class="shot reveal shot-full"><img src="assets/n8n/workflow-3-report-canvas.jpg" alt="Workflow 03, Weekly Pipeline Report: every Monday at 08:00 Berlin time it reads the sheet, builds the report and emails it." loading="lazy"><figcaption>Workflow 03, Weekly Pipeline Report: every Monday at 08:00 Berlin time it reads the sheet, builds the report and emails it.</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/n8n/email-weekly-report.jpg" alt="The weekly report: applicants by source, funnel conversion, average days between stages and the candidates who need attention." loading="lazy"><figcaption>The weekly report: applicants by source, funnel conversion, average days between stages and the candidates who need attention.</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/n8n/all-workflows-published.jpg" alt="All workflows published in n8n: screening, send due rejections, weekly report and an error alert." loading="lazy"><figcaption>All workflows published in n8n: screening, send due rejections, weekly report and an error alert.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="wrap back-foot reveal">
+  <a href="../index.html">&larr; Back to full case file</a>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.1});
+  revealEls.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+</script>
+
+</body>
+</html>
